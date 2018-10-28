@@ -1,0 +1,28 @@
+<div class="container color-dark">
+    <div class="col">
+      <p>
+        About
+      </p>
+    </div>
+    <div class="col">
+      <p class="text-right">
+        <button class="btn btn-primary" (click)="sendMeHome()">Back to home</button>
+      </p>
+    </div>
+  </div>
+  <div class="container color-light body">
+    <div class="col">
+      <p class="text-dark">
+        <strong>MY BUCKET LIST</strong> is an app developed with <strong>Angular 5</strong>, by following the amazing Udemy course
+        <a class="link-bold" href="https://www.udemy.com/angular-5/learn/v4/overview" target="_blank">'Learn Angular 5 from Scratch'</a> created by the Angular guru
+        <a class="link-bold" href="https://www.udemy.com/user/garysimon2/" target="_blank">Gary Simon</a>
+      </p>
+    </div>
+  
+    <div class="col">
+      <h1 class="text-dark text-center">My actual life goals</h1>
+      <ul class="goals-list" *ngIf="goals">
+        <li *ngFor="let goal of goals">{{ goal }}</li>
+      </ul>
+  </div>
+  
